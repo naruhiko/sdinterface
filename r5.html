@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>SDJudgement</title>
+    <link rel="stylesheet" href="main.css">
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <script src="jquery-3.5.1.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sawarabi+Gothic&family=Yusei+Magic&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="title">
+    SD法に基づく河川環境の音評価実験
+</div>
+<form action="main.php" method="post">
+<div class="contents">
+    <div class="sound">
+        <audio controls>
+            <source src="./sound/roji5.wav">
+        </audio>
+    </div>
+    <div class="questions">
+        <ul class="randlist">
+            <li>　　美しい　<input type="range" min="1" max="10" list="tickmarks" name="beautiful" id="beautiful">　汚い　　　　</li>
+            <li>　　力強い　<input type="range" min="1" max="10" list="tickmarks" name="strong" id="strong">　弱々しい　　</li>
+            <li>弾みのある　<input type="range" min="1" max="10" list="tickmarks" name="metal" id="metal">　金属性の　　</li>
+            <li>　　　快い　<input type="range" min="1" max="10" list="tickmarks" name="good" id="good">　不快な　　　</li>
+            <li>　　静かな　<input type="range" min="1" max="10" list="tickmarks" name="noisy" id="noisy">　騒々しい　　</li>
+            <li>落ち着いた　<input type="range" min="1" max="10" list="tickmarks" name="kinkin" id="kinkin">　甲高い　　　</li>
+            <li>　　澄んだ　<input type="range" min="1" max="10" list="tickmarks" name="dirty" id="dirty">　濁った　　　</li>
+            <li>迫力のある　<input type="range" min="1" max="10" list="tickmarks" name="rich" id="rich">　物足りない　</li>
+            <li>丸みのある　<input type="range" min="1" max="10" list="tickmarks" name="spike" id="spike">　とげとげしい</li>
+        </ul>
+        <datalist id="tickmarks">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+        </datalist>
+    </div>
+    <input type="hidden" name="soundfile" value="roji5">
+    <div class="button">
+    <ul>
+        <li>
+            氏名：<input type="text" name="name" id="name" required>
+        </li>
+        <li>
+            <button type="submit">送信</button>
+        </li>
+    </ul>
+    </div>
+</div>
+</form>
+</body>
+<script src="main.js"></script>
+</html>

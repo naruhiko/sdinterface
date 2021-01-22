@@ -2,9 +2,47 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>SDJudgement</title>
+    <title>Top Page</title>
+    <style>
+        .a_button {
+            display: inline-block;
+            border-style: solid;
+            background-color: lightgray;
+            border-width:1px;
+            border-color: darkgray;
+            color: black;
+            text-decoration: none;
+        }
+        .links {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-align-items: stretch;
+            align-items: stretch;
+            border: 1px solid #aaa;
+            text-align: center;
+            height: 150px;
+            padding: 10px;
+            margin: 20px;
+            flex-direction: row;
+        }
+        .links ul li{
+            list-style: none;
+            font-size: x-large;
+            display: table-cell;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-
+<div class="links">
+    <ul>
+        <li><a class="a_button" href="https://astranox.com/experiment2/r5.html">　A　</a></li>
+        <li><a class="a_button" href="https://astranox.com/experiment2/r15.html">　B　</a></li>
+        <li><a class="a_button" href="https://astranox.com/experiment2/t5.html">　C　</a></li>
+        <li><a class="a_button" href="https://astranox.com/experiment2/t15.html">　D　</a></li>
+    </ul>
+</div>
 </body>
 </html>
