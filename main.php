@@ -21,7 +21,7 @@ $myfile = fopen("./otoexam.txt", "a")  //fileを上書きモードで開く
 
 <?php
 date_default_timezone_set('Asia/Tokyo');
-fwrite($myfile, "名前: " . $_POST['name'] . ", " . "日付: " . date("Y-m-d H:i:s") . ", " . "ファイル: " . $_POST['soundfile'] . "\n" . "美しい: " . $_POST['beautiful'] . ", " . "力強い: " . $_POST['strong'] . ", " . "弾みのある: " . $_POST['metal'] . ", " . "快い: " . $_POST['good'] . ", " . "静かな: " . $_POST['noisy'] . ", " . "落ち着いた: " . $_POST['kinkin'] . ", " . "澄んだ: " . $_POST['dirty'] . ", " . "迫力のある: " . $_POST['rich'] . ", " . "丸みのある: " . $_POST['spike'] . "\n\n");
+fwrite($myfile, $_POST['name'] . ", " . date("Y-m-d H:i:s") . ", " . $_POST['soundfile'] . ", " . $_POST['beautiful'] . ", " . $_POST['strong'] . ", " . $_POST['metal'] . ", " . $_POST['good'] . ", " . $_POST['noisy'] . ", " . $_POST['kinkin'] . ", " . $_POST['dirty'] . ", " . $_POST['rich'] . ", " . $_POST['spike'] . "\n");
 ?>
 
 <?php
